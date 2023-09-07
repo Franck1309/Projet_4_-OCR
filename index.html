@@ -1,10 +1,97 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-        <title> </title>
+        <meta charset="utf-8">
+        <title>Ohmyfood</title>
         <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/89eff04f91.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
-        <h1>Projet N°4 !</h1>
+        <header>
+            <img src="images/ohmyfood.jpg" alt="Image du logo">
+        </header>
+        <main>
+            <div class="place">
+                <i class="fa-solid fa-location-dot"></i><p>Paris, Belleville</p>
+            </div>
+            <section class="discover">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <input type="button" value="Explorer nos restaurants"/>
+            </section>
+            <section class="functioning">
+                <h2>Fonctionnement</h2>
+                <div class="stage">
+                    <div class="stage_composition">
+                        <div class="number"><p>1</p></div>
+                        <i class="fa-solid fa-mobile-screen" style= "color: #7E7E7E;"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                    <div class="stage_composition">
+                        <div class="number">2</div>
+                        <i class="fa-solid fa-list-ul" style="color: #7E7E7E;"></i>
+                        <p>Composez votre menu</p>
+                    </div>
+                    <div class="stage_composition">
+                        <div class="number">3</div>
+                        <i class="fa-solid fa-store" style="color: #9356DC;"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
+                </div>
+            </section>
+            <section class="restaurants">
+                <h2>Restaurants</h2>
+                <article class="article_1">
+                    <div class="card">
+                        <img src="restaurants/Food1.jpg" alt="image d'un plat">
+                        <div>
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <i class="fa-thin fa-heart" style="color: #000000;"></i>
+                    </div>
+                    <div class="card">
+                        <img src="restaurants/Food2.jpg" alt="image d'un plat">
+                        <div>
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <i class="fa-thin fa-heart" style="color: #000000;"></i>
+                    </div>
+                </article>
+                <article class="article_2">
+                    <div class="card">
+                        <img src="restaurants/Food3.jpg" alt="image d'un plat">
+                        <div>
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <i class="fa-thin fa-heart" style="color: #000000;"></i>
+                    </div>
+                    <div class="card">
+                        <img src="restaurants/Food4.jpg" alt="image d'un plat">
+                        <div>
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <i class="fa-thin fa-heart" style="color: #000000;"></i>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <img src="images/ohmyfood.jpg" alt="Image du logo">
+            <div class="add_text">
+                <div><i class="fa-solid fa-utensils" style="color: #ffffff;"></i><p>Proposer un restaurant</p></div>
+                <div><i class="fa-solid fa-handshake-simple" style="color: #ffffff;"></i><p>Devenir partenaire</p></div>
+                <a href="#">Mentions légales</a>
+                <a href="#">Contact</a>
+            </div>
+        </footer>
     </body>
 </html>
