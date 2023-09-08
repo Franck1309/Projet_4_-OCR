@@ -1,15 +1,102 @@
+body {
+  margin: 0px;
+}
+
+header {
+  height: 63px;
+}
 header img {
-  width: 45%;
+  display: flex;
+  margin: auto;
+  width: 162px;
+  padding-top: 20px;
+}
+
+.place {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background-color: #EAEAEA;
+  justify-content: center;
+  gap: 17px;
+}
+.place i {
+  padding-top: 15px;
+}
+
+.discover {
+  background-color: #F6F6F6;
+  padding-bottom: 40px;
+  width: 100%;
+}
+.discover h2 {
+  width: 275px;
+  margin: auto;
+  padding-top: 30px;
+  text-align: center;
+  font-family: Roboto;
+}
+.discover p {
+  width: 315px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.discover input {
+  border-radius: 25px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  border: 0px solid white;
+  color: white;
+  height: 50px;
+  padding-right: 35px;
+  padding-left: 35px;
+  display: block;
+  margin: auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 320px;
   margin: auto;
 }
-
-h2 {
+.functioning .stage {
+  width: 100%;
+}
+.functioning .stage_composition {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  gap: 25px;
+  background-color: #F6F6F6;
+  margin-bottom: 20px;
+  width: 325px;
+  height: 62px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
   font-family: Roboto;
 }
-
-.functioning p {
-  font-family: Roboto;
-  font-weight: 500;
+.functioning .stage_composition i {
+  padding-top: 15px;
+}
+.functioning .stage_composition .number {
+  width: 24px;
+  height: 24px;
+  margin-top: 15px;
+  margin-left: -10px;
+  border-radius: 100px;
+  background-color: #9356DC;
+}
+.functioning .stage_composition .number p {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 2px;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
