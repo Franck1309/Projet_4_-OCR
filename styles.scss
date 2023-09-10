@@ -50,11 +50,11 @@ $Font_color5: #9356DC;
     }
 }
 
-    body {
+body {
         margin: 0px;
     }
 
-    header {
+header {
         height: 63px;
         img {
             display: flex;
@@ -64,7 +64,7 @@ $Font_color5: #9356DC;
         }
     }
 
-    .place {
+.place {
         display: flex;
         flex-direction: row;
         height: 50px;
@@ -76,7 +76,7 @@ $Font_color5: #9356DC;
         } 
     }
     
-    .discover {
+.discover {
         background-color: $Font_color2;
         padding-bottom: 40px;
         width: 100%;
@@ -102,10 +102,9 @@ $Font_color5: #9356DC;
         
     }
 
-    .functioning  {
+.functioning  {
         display: flex;
         flex-direction: column;
-        padding: 0px;
         width: 320px;
         margin: auto;
         .stage {
@@ -115,6 +114,124 @@ $Font_color5: #9356DC;
             @include button_aspect_stage ;
         }
     }
+
+.restaurants {
+    background-color: $Font_color2;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-top: 60px;
+    }
+    .article_1 , .article_2 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-radius: 15px;
+            background-color: white;
+            margin-bottom: 15px;
+            height: 250px;
+            img {
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+                border-radius: 15px 15px 0px 0px;
+            }
+            .card_content {
+                display: flex;
+                flex-direction: row;
+                height: 30%;
+                width: 100%;
+                justify-content:space-between;
+                
+                .heart {
+                    display: block;
+                    position: relative;
+                    top: 30%;
+                    right: 3%;
+                    width: 22px;
+                    height: 22px;
+                    .carre {
+                        display: block;
+                        position: relative;
+                        background-color: white;
+                        width: 8px;
+                        height: 8px;
+                        top: -41%;
+                        left: 30%;
+                        rotate: (45deg);
+                        border-bottom: 1px solid black;
+                        border-right: 1px solid black;
+                    }
+                    .cercle_d {
+                        display: block;
+                        position: relative;
+                        background-color: white;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 10px 10px 0px 0px;
+                        rotate: (45deg);
+                        left: 55%;
+                        top: 10%;
+                        border-right: 1px solid black;
+                        border-left: 1px solid black;
+                        border-top: 1px solid black;
+
+                    }
+                    .cercle_g {
+                        display: block;
+                        position: relative;
+                        background-color: white;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 10px 10px 0px 0px;
+                        border-left: 1px solid black;
+                        border-top: 1px solid black;
+                        border-right: 1px solid black;
+                        rotate: (-45deg);
+                        top: -30%;
+
+                    }
+                    &:hover .cercle_g {
+                        background: red;
+                        border-left: 1px solid red;
+                        border-top: 1px solid red;
+                        border-right: 1px solid red;
+                    }
+                    &:hover .cercle_d {
+                        background: red;
+                        border-right: 1px solid red;
+                        border-left: 1px solid red;
+                        border-top: 1px solid red;
+                    }
+                    &:hover .carre {
+                        background: red;
+                        border-bottom: 1px solid red;
+                        border-right: 1px solid red;
+                    }
+    
+                }
+                
+                .card_text {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    h3 {
+                        margin: 10px 0px 5px 10px;
+                    }
+                    p {
+                        margin: 0px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

@@ -61,7 +61,6 @@ header img {
 .functioning {
   display: flex;
   flex-direction: column;
-  padding: 0px;
   width: 320px;
   margin: auto;
 }
@@ -97,6 +96,119 @@ header img {
   margin-bottom: 0px;
   margin-top: 2px;
   color: white;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants h2 {
+  margin-top: 60px;
+}
+.restaurants .article_1, .restaurants .article_2 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+.restaurants .article_1 .card, .restaurants .article_2 .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 15px;
+  height: 250px;
+}
+.restaurants .article_1 .card img, .restaurants .article_2 .card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurants .article_1 .card .card_content, .restaurants .article_2 .card .card_content {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  width: 100%;
+  justify-content: space-between;
+}
+.restaurants .article_1 .card .card_content .heart, .restaurants .article_2 .card .card_content .heart {
+  display: block;
+  position: relative;
+  top: 30%;
+  right: 3%;
+  width: 22px;
+  height: 22px;
+}
+.restaurants .article_1 .card .card_content .heart .carre, .restaurants .article_2 .card .card_content .heart .carre {
+  display: block;
+  position: relative;
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  top: -41%;
+  left: 30%;
+  rotate: 45deg;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.restaurants .article_1 .card .card_content .heart .cercle_d, .restaurants .article_2 .card .card_content .heart .cercle_d {
+  display: block;
+  position: relative;
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px 10px 0px 0px;
+  rotate: 45deg;
+  left: 55%;
+  top: 10%;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+.restaurants .article_1 .card .card_content .heart .cercle_g, .restaurants .article_2 .card .card_content .heart .cercle_g {
+  display: block;
+  position: relative;
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px 10px 0px 0px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  rotate: -45deg;
+  top: -30%;
+}
+.restaurants .article_1 .card .card_content .heart:hover .cercle_g, .restaurants .article_2 .card .card_content .heart:hover .cercle_g {
+  background: red;
+  border-left: 1px solid red;
+  border-top: 1px solid red;
+  border-right: 1px solid red;
+}
+.restaurants .article_1 .card .card_content .heart:hover .cercle_d, .restaurants .article_2 .card .card_content .heart:hover .cercle_d {
+  background: red;
+  border-right: 1px solid red;
+  border-left: 1px solid red;
+  border-top: 1px solid red;
+}
+.restaurants .article_1 .card .card_content .heart:hover .carre, .restaurants .article_2 .card .card_content .heart:hover .carre {
+  background: red;
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+}
+.restaurants .article_1 .card .card_content .card_text, .restaurants .article_2 .card .card_content .card_text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.restaurants .article_1 .card .card_content .card_text h3, .restaurants .article_2 .card .card_content .card_text h3 {
+  margin: 10px 0px 5px 10px;
+}
+.restaurants .article_1 .card .card_content .card_text p, .restaurants .article_2 .card .card_content .card_text p {
+  margin: 0px;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
