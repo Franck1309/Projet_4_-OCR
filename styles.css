@@ -146,69 +146,40 @@ header img {
   width: 100%;
   justify-content: space-between;
 }
+.restaurants .article_1 .card .card_content .heart-completed, .restaurants .article_2 .card .card_content .heart-completed {
+  width: 25px;
+  height: 25px;
+  padding-top: 15px;
+  margin-right: 15px;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  display: block;
+  top: -17%;
+  opacity: 0;
+}
 .restaurants .article_1 .card .card_content .heart, .restaurants .article_2 .card .card_content .heart {
   display: block;
   position: relative;
-  top: 30%;
-  right: 3%;
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  margin-top: 15px;
 }
-.restaurants .article_1 .card .card_content .heart .carre, .restaurants .article_2 .card .card_content .heart .carre {
+.restaurants .article_1 .card .card_content .heart-empty, .restaurants .article_2 .card .card_content .heart-empty {
   display: block;
   position: relative;
-  background-color: white;
-  width: 8px;
-  height: 8px;
-  top: -41%;
-  left: 30%;
-  rotate: 45deg;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  margin-top: 11px;
+  margin-right: 25px;
 }
-.restaurants .article_1 .card .card_content .heart .cercle_d, .restaurants .article_2 .card .card_content .heart .cercle_d {
-  display: block;
-  position: relative;
-  background-color: white;
-  width: 8px;
-  height: 8px;
-  border-radius: 10px 10px 0px 0px;
-  rotate: 45deg;
-  left: 55%;
-  top: 10%;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
+.restaurants .article_1 .card .card_content:hover .heart-completed, .restaurants .article_2 .card .card_content:hover .heart-completed {
+  opacity: 1;
+  transition: all 300ms;
 }
-.restaurants .article_1 .card .card_content .heart .cercle_g, .restaurants .article_2 .card .card_content .heart .cercle_g {
-  display: block;
-  position: relative;
-  background-color: white;
-  width: 8px;
-  height: 8px;
-  border-radius: 10px 10px 0px 0px;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  rotate: -45deg;
-  top: -30%;
-}
-.restaurants .article_1 .card .card_content .heart:hover .cercle_g, .restaurants .article_2 .card .card_content .heart:hover .cercle_g {
-  background: linear-gradient(#9356DC, #FF79DA);
-  border-left: 1px solid #a374dc;
-  border-top: 1px solid #a374dc;
-  border-right: 1px solid #a374dc;
-}
-.restaurants .article_1 .card .card_content .heart:hover .cercle_d, .restaurants .article_2 .card .card_content .heart:hover .cercle_d {
-  background: linear-gradient(#9356DC, #FF79DA);
-  border-right: 1px solid #a374dc;
-  border-left: 1px solid #a374dc;
-  border-top: 1px solid #a374dc;
-}
-.restaurants .article_1 .card .card_content .heart:hover .carre, .restaurants .article_2 .card .card_content .heart:hover .carre {
-  background: linear-gradient(#FF79DA, #f996dd);
-  border-bottom: 1px solid #f996dd;
-  border-right: 1px solid #f996dd;
+.restaurants .article_1 .card .card_content:hover .heart-empty, .restaurants .article_2 .card .card_content:hover .heart-empty {
+  opacity: 0;
 }
 .restaurants .article_1 .card .card_content .card_text, .restaurants .article_2 .card .card_content .card_text {
   display: flex;
@@ -338,70 +309,6 @@ footer .add_text .text_2 p {
   flex-direction: row;
   width: auto;
   justify-content: center;
-}
-.main__flat--articleflat .title__flat .heart {
-  display: block;
-  position: relative;
-  padding-top: 25px;
-  left: 5%;
-  width: 22px;
-  height: 22px;
-}
-.main__flat--articleflat .title__flat .heart .carre {
-  display: block;
-  position: relative;
-  background-color: white;
-  width: 8px;
-  height: 8px;
-  top: -41%;
-  left: 30%;
-  rotate: 45deg;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-}
-.main__flat--articleflat .title__flat .heart .cercleD {
-  display: block;
-  position: relative;
-  background-color: white;
-  width: 8px;
-  height: 8px;
-  border-radius: 10px 10px 0px 0px;
-  rotate: 45deg;
-  left: 55%;
-  top: 11%;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-}
-.main__flat--articleflat .title__flat .heart .cercleG {
-  display: block;
-  position: relative;
-  background-color: white;
-  width: 8px;
-  height: 8px;
-  border-radius: 10px 10px 0px 0px;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  rotate: -45deg;
-  top: -30%;
-}
-.main__flat--articleflat .title__flat .heart:hover .cercleG {
-  background: linear-gradient(#9356DC, #FF79DA);
-  border-left: 1px solid #FF79DA;
-  border-top: 1px solid #FF79DA;
-  border-right: 1px solid #FF79DA;
-}
-.main__flat--articleflat .title__flat .heart:hover .cercleD {
-  background: linear-gradient(#9356DC, #FF79DA);
-  border-right: 1px solid #FF79DA;
-  border-left: 1px solid #FF79DA;
-  border-top: 1px solid #FF79DA;
-}
-.main__flat--articleflat .title__flat .heart:hover .carre {
-  background: linear-gradient(#FF79DA, #f996dd);
-  border-bottom: 1px solid #FF79DA;
-  border-right: 1px solid #FF79DA;
 }
 .main__flat--articleflat .title__flat--h2 {
   font-family: shrikhand;
