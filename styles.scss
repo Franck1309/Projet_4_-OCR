@@ -1,5 +1,9 @@
 @import "sass/mixins.scss" ;
 
+
+
+/**********************  Mobile First  *************************/
+
 body {
         margin: 0px;
     }
@@ -78,7 +82,8 @@ header {
     display: flex;
     flex-direction: column;
     h2 {
-        margin-top: 60px;
+        margin-top: 20px;
+        margin-left: 20px;
     }
     a {
         text-decoration: none;
@@ -224,10 +229,6 @@ footer {
     }
 }
 
-
-/********************   Flat_1   *********************/
-
-
 .header__flat {
     display: flex;
     flex-direction: row;
@@ -332,3 +333,131 @@ footer {
     }
     
 }
+
+
+/**********************   Tablette   ***********************/
+
+@media screen and (min-width: 700px) {
+    .restaurants {
+        h2 {
+            margin-left: 40px;
+        }
+        .article_1 {
+            .card {
+                .news{
+                    margin-left: 75%;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-top: 40px;
+        h2 {
+            display: block;
+            position: absolute;
+            right: 4%;
+            font-size:medium;
+        }
+        .add_text {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            padding-top: 20px;
+            margin-left: 90px;
+          
+            i {
+                margin-right: 10px;
+            }
+            .text_1 {
+                display: flex;
+                flex-direction: row;
+                p {
+                    margin: 0px;
+                }
+            }
+            .text_2 {
+                display: flex;
+                flex-direction: row;
+                p {
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+}
+    
+/**********************   Desktop   ************************/
+
+@media screen and (min-width: 1023px) {
+
+    .discover {
+        h2 {
+            width: 50%;
+        }
+        p {
+            width: 60%;
+        }
+    }
+
+    .functioning {
+        width: 70%;
+
+        .stage {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    }
+    
+    .restaurants {
+        h2 {
+            margin-left: 60px;
+        }
+        .article_1  {
+            display: flex;
+            flex-direction: row;
+            padding-top: 20px;
+            gap: 20px;
+
+            .card {
+              .news {
+                position: absolute;
+                margin-top: 15px;
+                margin-left: 34%;
+                width: 80px;
+                text-align: center;
+                border-radius: 2px;
+                background-color: #99E2D0;
+                color: #008766;
+                font-family: $Font_familyR;
+                padding: 6px;
+                
+            }  
+            }
+            
+        }
+        .article_2 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+        
+    }
+
+    footer {
+        .add_text {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            padding-top: 20px;
+            width: 70%;
+            justify-content: end;
+        }
+    }
+   
+}
+
