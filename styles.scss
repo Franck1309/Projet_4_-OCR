@@ -97,18 +97,35 @@ header {
             background-color: white;
             margin-bottom: 15px;
             height: 250px;
+
+            .news {
+                position: absolute;
+                margin-top: 15px;
+                margin-left: 60%;
+                width: 80px;
+                text-align: center;
+                border-radius: 2px;
+                background-color: #99E2D0;
+                color: #008766;
+                font-family: $Font_familyR;
+                padding: 6px;
+                
+            }
+
             img {
                 width: 100%;
                 height: 70%;
                 object-fit: cover;
                 border-radius: 15px 15px 0px 0px;
             }
+
             .card_content {
                 display: flex;
                 flex-direction: row;
                 height: 30%;
                 width: 100%;
                 justify-content:space-between;
+                
                 
                 .heart-completed {
                     width: 25px;
@@ -264,7 +281,45 @@ footer {
 
             &--h2 {
             font-family: shrikhand;
-        }
+            }
+
+            .heart-completed {
+                width: 25px;
+                height: 25px;
+                padding-top: 15px;
+                margin-right: 15px;
+                background-image: linear-gradient(#9356DC,#FF79DA);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                position: absolute;
+                display: block;
+                top: -17%;
+                opacity: 0;
+            }
+            .heart {
+                display: block;
+                position: relative;
+                width: 25px;
+                height: 25px;
+                margin-left: 20px;
+                margin-top: 23px;
+            }
+
+            .heart-empty {
+                display: block;
+                position: relative;
+                margin-top: 11px;
+                margin-right: 25px;
+            }
+
+            &:hover .heart-completed {
+                opacity: 1;
+                transition: all 300ms;
+            }
+            &:hover .heart-empty {
+                opacity: 0;
+            }
         }
         
         .button__commande {
