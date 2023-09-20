@@ -1,4 +1,66 @@
+@keyframes preloader {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /**********************  Mobile First  *************************/
+/*.preloader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    animation: preloader 6s forwards;
+    h1 {
+        font-family: $Font_familyS;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image:linear-gradient(#9356DC,#FF79DA) ;
+        color: transparent;
+        font-size:xx-large;
+        text-align: center;
+
+    }
+    .loader {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90px;
+        height: 90px;
+    }
+    .loader::before {
+        content: "";
+        width: 90px;
+        height: 90px;
+        border: solid 4px white;
+        border-color: white transparent white transparent;
+        position: absolute;
+        border-radius: 50%;
+        animation: loader 2s infinite ease-in-out ;
+    }
+}*/
 body {
   margin: 0px;
 }
@@ -20,6 +82,10 @@ header img {
   background-color: #EAEAEA;
   justify-content: center;
   gap: 17px;
+}
+.place .search_cities {
+  background-color: #EAEAEA;
+  border: none;
 }
 .place i {
   padding-top: 15px;
@@ -65,6 +131,7 @@ header img {
 .discover input:hover {
   background: linear-gradient(#a77ade, #faa9e3);
   transition: all 330ms;
+  cursor: pointer;
 }
 
 .functioning {
@@ -188,11 +255,11 @@ header img {
   margin-top: 11px;
   margin-right: 25px;
 }
-.restaurants .article_1 .card .card_content:hover .heart-completed, .restaurants .article_2 .card .card_content:hover .heart-completed {
+.restaurants .article_1 .card .card_content .heart:hover .heart-completed, .restaurants .article_2 .card .card_content .heart:hover .heart-completed {
   opacity: 1;
   transition: all 300ms;
 }
-.restaurants .article_1 .card .card_content:hover .heart-empty, .restaurants .article_2 .card .card_content:hover .heart-empty {
+.restaurants .article_1 .card .card_content .heart:hover .heart-empty, .restaurants .article_2 .card .card_content .heart:hover .heart-empty {
   opacity: 0;
 }
 .restaurants .article_1 .card .card_content .card_text, .restaurants .article_2 .card .card_content .card_text {
@@ -298,6 +365,14 @@ footer .add_text .text_2 p {
   padding-left: 10px;
   padding-right: 10px;
 }
+.main__flat--articleflat .entree .bulle:hover, .main__flat--articleflat .flat .bulle:hover, .main__flat--articleflat .dessert .bulle:hover {
+  border-right: #99E2D0 solid 70px;
+  transition: 150ms;
+}
+.main__flat--articleflat .entree .bulle:hover #check, .main__flat--articleflat .flat .bulle:hover #check, .main__flat--articleflat .dessert .bulle:hover #check {
+  opacity: 1;
+  transition: all 150ms;
+}
 .main__flat--articleflat .entree .bulle .infos_flat, .main__flat--articleflat .flat .bulle .infos_flat, .main__flat--articleflat .dessert .bulle .infos_flat {
   font-weight: 300;
 }
@@ -305,17 +380,38 @@ footer .add_text .text_2 p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 19px;
 }
 .main__flat--articleflat .entree .bulle .bulle_row p, .main__flat--articleflat .flat .bulle .bulle_row p, .main__flat--articleflat .dessert .bulle .bulle_row p {
   margin: 0px;
   margin-top: 10px;
 }
+.main__flat--articleflat .entree .bulle .bulle_row .infos_flat, .main__flat--articleflat .flat .bulle .bulle_row .infos_flat, .main__flat--articleflat .dessert .bulle .bulle_row .infos_flat {
+  display: inline-block;
+  height: 19px;
+  max-width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .main__flat--articleflat .entree .bulle .name_flat, .main__flat--articleflat .flat .bulle .name_flat, .main__flat--articleflat .dessert .bulle .name_flat {
   margin: 0px;
+  margin-bottom: -6px;
 }
 .main__flat--articleflat .entree .bulle .bulle__row p, .main__flat--articleflat .flat .bulle .bulle__row p, .main__flat--articleflat .dessert .bulle .bulle__row p {
   margin-top: 5px;
+}
+.main__flat--articleflat .entree .bulle #check, .main__flat--articleflat .flat .bulle #check, .main__flat--articleflat .dessert .bulle #check {
+  display: block;
+  position: absolute;
+  text-align: center;
+  padding-top: 8px;
+  width: 30px;
+  height: 22px;
+  right: 10%;
+  opacity: 0;
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 50px;
 }
 .main__flat--articleflat .title__flat {
   display: flex;
@@ -376,9 +472,22 @@ footer .add_text .text_2 p {
   margin: auto;
   margin-top: 30px;
 }
+.main__flat--articleflat .button__commande:hover {
+  background: linear-gradient(#a77ade, #faa9e3);
+  transition: all 330ms;
+  cursor: pointer;
+}
 
 /**********************   Tablette   ***********************/
 @media screen and (min-width: 700px) {
+  .main__flat--articleflat {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main__flat--articleflat .entree .bulle #check, .main__flat--articleflat .flat .bulle #check, .main__flat--articleflat .dessert .bulle #check {
+    right: 8.5%;
+  }
   .restaurants h2 {
     margin-left: 40px;
   }
@@ -421,6 +530,14 @@ footer .add_text .text_2 p {
 }
 /**********************   Desktop   ************************/
 @media screen and (min-width: 1023px) {
+  .main__flat--articleflat {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main__flat--articleflat .entree .bulle #check, .main__flat--articleflat .flat .bulle #check, .main__flat--articleflat .dessert .bulle #check {
+    right: 7%;
+  }
   .discover h2 {
     width: 50%;
   }

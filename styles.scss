@@ -1,8 +1,51 @@
 @import "sass/mixins.scss" ;
-
+@import "sass/keyframes.scss" ;
 
 
 /**********************  Mobile First  *************************/
+
+/*.preloader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    animation: preloader 6s forwards;
+    h1 {
+        font-family: $Font_familyS;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image:linear-gradient(#9356DC,#FF79DA) ;
+        color: transparent;
+        font-size:xx-large;
+        text-align: center;
+       
+    }
+    .loader {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90px;
+        height: 90px;
+    }
+    .loader::before {
+        content: "";
+        width: 90px;
+        height: 90px;
+        border: solid 4px white;
+        border-color: white transparent white transparent;
+        position: absolute;
+        border-radius: 50%;
+        animation: loader 2s infinite ease-in-out ;
+    }
+}*/
 
 body {
         margin: 0px;
@@ -25,6 +68,10 @@ header {
         background-color: $Font_color1;
         justify-content: center;
         gap: 17px;
+        .search_cities {
+            background-color: $Font_color1;
+            border: none;
+        }
         i {
             padding-top: 15px;
         } 
@@ -59,6 +106,7 @@ header {
             &:hover {
                 background: linear-gradient(#a77ade,#faa9e3);
                 transition: all 330ms;
+                cursor: pointer;
             }
         }
         
@@ -162,11 +210,11 @@ header {
                     margin-right: 25px;
                 }
 
-                &:hover .heart-completed {
+                .heart:hover .heart-completed {
                     opacity: 1;
                     transition: all 300ms;
                 }
-                &:hover .heart-empty {
+                .heart:hover .heart-empty {
                     opacity: 0;
                 }
 
@@ -271,9 +319,26 @@ footer {
                 p {
                     margin-top: 5px;
                 }
+
+                }
+
+                #check {
+                    display: block;
+                    position: absolute;
+                    text-align: center;
+                    padding-top: 8px;
+                    width: 30px;
+                    height: 22px;
+                    right: 10%;
+                    opacity: 0;
+                    color: #99E2D0;
+                    background-color: white;
+                    border-radius: 50px;
                 }
             }
         }
+
+
         .title__flat {
             display: flex;
             flex-direction: row;
@@ -328,6 +393,11 @@ footer {
             width:186px;
             margin: auto;
             margin-top: 30px;
+            &:hover {
+                background: linear-gradient(#a77ade,#faa9e3);
+                transition: all 330ms;
+                cursor: pointer;
+            }
         }
         
     }
@@ -338,6 +408,22 @@ footer {
 /**********************   Tablette   ***********************/
 
 @media screen and (min-width: 700px) {
+
+    .main__flat {
+        &--articleflat {
+            width: 80%;
+        margin-left:auto;
+        margin-right: auto;
+            .entree, .flat, .dessert {
+                .bulle {
+                    #check {
+                        right: 8.5%;
+                    }
+                }
+            }
+        }
+    }
+
     .restaurants {
         h2 {
             margin-left: 40px;
@@ -350,6 +436,7 @@ footer {
             }
         }
     }
+
 
     footer {
         padding-top: 40px;
@@ -392,6 +479,21 @@ footer {
 
 @media screen and (min-width: 1023px) {
 
+    .main__flat {
+        &--articleflat {
+            width: 80%;
+        margin-left:auto;
+        margin-right: auto;
+            .entree, .flat, .dessert {
+                .bulle {
+                    #check {
+                        right: 7%;
+                    }
+                }
+            }
+        }
+    }
+
     .discover {
         h2 {
             width: 50%;
@@ -411,7 +513,7 @@ footer {
     }
     }
     
-    .restaurants {
+    .restaurants {   
         h2 {
             margin-left: 60px;
         }

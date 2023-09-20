@@ -63,6 +63,15 @@ $Font_color5: #9356DC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
     padding-left: 10px;
     padding-right: 10px;
+    &:hover {
+        border-right: #99E2D0 solid 70px;
+        transition: 150ms;
+    }
+
+    &:hover #check {
+        opacity: 1;
+        transition: all 150ms;
+    }
     .infos_flat {
         font-weight: 300;
     }
@@ -70,15 +79,24 @@ $Font_color5: #9356DC;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 19px;
         p {
             margin: 0px;
             margin-top: 10px;
+        } 
+        .infos_flat {
+            display: inline-block;
+            height: 19px;
+            max-width: 300px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
     .name_flat {
         margin: 0px;
+        margin-bottom: -6px;
     }
+    
 
 }
 
