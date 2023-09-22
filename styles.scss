@@ -4,7 +4,7 @@
 
 /**********************  Mobile First  *************************/
 
-/*.preloader {
+.preloader {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-items: center;
     justify-content: center;
-    animation: preloader 6s forwards;
+    animation: preloader 3s forwards;
     h1 {
         font-family: $Font_familyS;
         -webkit-background-clip: text;
@@ -45,7 +45,7 @@
         border-radius: 50%;
         animation: loader 2s infinite ease-in-out ;
     }
-}*/
+}
 
 body {
         margin: 0px;
@@ -315,6 +315,7 @@ footer {
             }
             .bulle {
             @include button_aspect_flat;
+            
                 .bulle__row {
                 p {
                     margin-top: 5px;
@@ -338,6 +339,17 @@ footer {
             }
         }
 
+        .progress_bulle_1 {
+            animation: apparition 2000ms ;
+        }
+
+        .progress_bulle_2 {
+            animation: apparition 4000ms ;
+        }
+
+        .progress_bulle_3 {
+            animation: apparition 6000ms ;
+        }
 
         .title__flat {
             display: flex;
@@ -403,7 +415,6 @@ footer {
     }
     
 }
-
 
 /**********************   Tablette   ***********************/
 

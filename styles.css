@@ -18,49 +18,66 @@
     transform: rotate(360deg);
   }
 }
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /**********************  Mobile First  *************************/
-/*.preloader {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: black;
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
-    animation: preloader 6s forwards;
-    h1 {
-        font-family: $Font_familyS;
-        -webkit-background-clip: text;
-        background-clip: text;
-        background-image:linear-gradient(#9356DC,#FF79DA) ;
-        color: transparent;
-        font-size:xx-large;
-        text-align: center;
+.preloader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  animation: preloader 3s forwards;
+}
+.preloader h1 {
+  font-family: Shrikhand;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  color: transparent;
+  font-size: xx-large;
+  text-align: center;
+}
+.preloader .loader {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+  height: 90px;
+}
+.preloader .loader::before {
+  content: "";
+  width: 90px;
+  height: 90px;
+  border: solid 4px white;
+  border-color: white transparent white transparent;
+  position: absolute;
+  border-radius: 50%;
+  animation: loader 2s infinite ease-in-out;
+}
 
-    }
-    .loader {
-        display: block;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90px;
-        height: 90px;
-    }
-    .loader::before {
-        content: "";
-        width: 90px;
-        height: 90px;
-        border: solid 4px white;
-        border-color: white transparent white transparent;
-        position: absolute;
-        border-radius: 50%;
-        animation: loader 2s infinite ease-in-out ;
-    }
-}*/
 body {
   margin: 0px;
 }
@@ -412,6 +429,15 @@ footer .add_text .text_2 p {
   color: #99E2D0;
   background-color: white;
   border-radius: 50px;
+}
+.main__flat--articleflat .progress_bulle_1 {
+  animation: apparition 2000ms;
+}
+.main__flat--articleflat .progress_bulle_2 {
+  animation: apparition 4000ms;
+}
+.main__flat--articleflat .progress_bulle_3 {
+  animation: apparition 6000ms;
 }
 .main__flat--articleflat .title__flat {
   display: flex;
