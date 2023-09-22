@@ -386,7 +386,7 @@ footer .add_text .text_2 p {
   border-right: #99E2D0 solid 70px;
   transition: 150ms;
 }
-.main__flat--articleflat .entree .bulle:hover #check, .main__flat--articleflat .flat .bulle:hover #check, .main__flat--articleflat .dessert .bulle:hover #check {
+.main__flat--articleflat .entree .bulle:hover .valid, .main__flat--articleflat .flat .bulle:hover .valid, .main__flat--articleflat .dessert .bulle:hover .valid {
   opacity: 1;
   transition: all 150ms;
 }
@@ -417,7 +417,7 @@ footer .add_text .text_2 p {
 .main__flat--articleflat .entree .bulle .bulle__row p, .main__flat--articleflat .flat .bulle .bulle__row p, .main__flat--articleflat .dessert .bulle .bulle__row p {
   margin-top: 5px;
 }
-.main__flat--articleflat .entree .bulle #check, .main__flat--articleflat .flat .bulle #check, .main__flat--articleflat .dessert .bulle #check {
+.main__flat--articleflat .entree .bulle .valid, .main__flat--articleflat .flat .bulle .valid, .main__flat--articleflat .dessert .bulle .valid {
   display: block;
   position: absolute;
   text-align: center;
@@ -511,7 +511,7 @@ footer .add_text .text_2 p {
     margin-left: auto;
     margin-right: auto;
   }
-  .main__flat--articleflat .entree .bulle #check, .main__flat--articleflat .flat .bulle #check, .main__flat--articleflat .dessert .bulle #check {
+  .main__flat--articleflat .entree .bulle .valid, .main__flat--articleflat .flat .bulle .valid, .main__flat--articleflat .dessert .bulle .valid {
     right: 8.5%;
   }
   .restaurants h2 {
@@ -561,7 +561,7 @@ footer .add_text .text_2 p {
     margin-left: auto;
     margin-right: auto;
   }
-  .main__flat--articleflat .entree .bulle #check, .main__flat--articleflat .flat .bulle #check, .main__flat--articleflat .dessert .bulle #check {
+  .main__flat--articleflat .entree .bulle .valid, .main__flat--articleflat .flat .bulle .valid, .main__flat--articleflat .dessert .bulle .valid {
     right: 7%;
   }
   .discover h2 {

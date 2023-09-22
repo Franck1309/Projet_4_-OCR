@@ -323,7 +323,7 @@ footer {
 
                 }
 
-                #check {
+                .valid {
                     display: block;
                     position: absolute;
                     text-align: center;
@@ -427,7 +427,7 @@ footer {
         margin-right: auto;
             .entree, .flat, .dessert {
                 .bulle {
-                    #check {
+                    .valid {
                         right: 8.5%;
                     }
                 }
@@ -497,7 +497,7 @@ footer {
         margin-right: auto;
             .entree, .flat, .dessert {
                 .bulle {
-                    #check {
+                    .valid {
                         right: 7%;
                     }
                 }
