@@ -274,7 +274,6 @@ header img {
 }
 .restaurants .article_1 .card .card_content .heart:hover .heart-completed, .restaurants .article_2 .card .card_content .heart:hover .heart-completed {
   opacity: 1;
-  transition: all 300ms;
 }
 .restaurants .article_1 .card .card_content .heart:hover .heart-empty, .restaurants .article_2 .card .card_content .heart:hover .heart-empty {
   opacity: 0;
@@ -384,11 +383,9 @@ footer .add_text .text_2 p {
 }
 .main__flat--articleflat .entree .bulle:hover, .main__flat--articleflat .flat .bulle:hover, .main__flat--articleflat .dessert .bulle:hover {
   border-right: #99E2D0 solid 70px;
-  transition: 150ms;
 }
 .main__flat--articleflat .entree .bulle:hover .valid, .main__flat--articleflat .flat .bulle:hover .valid, .main__flat--articleflat .dessert .bulle:hover .valid {
   opacity: 1;
-  transition: all 150ms;
 }
 .main__flat--articleflat .entree .bulle .infos_flat, .main__flat--articleflat .flat .bulle .infos_flat, .main__flat--articleflat .dessert .bulle .infos_flat {
   font-weight: 300;
