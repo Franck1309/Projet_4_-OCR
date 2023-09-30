@@ -383,9 +383,11 @@ footer .add_text .text_2 p {
 }
 .main__flat--articleflat .entree .bulle:hover, .main__flat--articleflat .flat .bulle:hover, .main__flat--articleflat .dessert .bulle:hover {
   border-right: #99E2D0 solid 70px;
+  transition: border-right 400ms ease-in-out;
 }
 .main__flat--articleflat .entree .bulle:hover .valid, .main__flat--articleflat .flat .bulle:hover .valid, .main__flat--articleflat .dessert .bulle:hover .valid {
   opacity: 1;
+  animation: apparition 400ms;
 }
 .main__flat--articleflat .entree .bulle .infos_flat, .main__flat--articleflat .flat .bulle .infos_flat, .main__flat--articleflat .dessert .bulle .infos_flat {
   font-weight: 300;

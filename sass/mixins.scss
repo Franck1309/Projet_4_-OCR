@@ -65,9 +65,11 @@ $Font_color5: #9356DC;
     padding-right: 10px;
     &:hover {
         border-right: #99E2D0 solid 70px;
+        transition: border-right 400ms ease-in-out;
     }
     &:hover .valid {
         opacity: 1;
+        animation:  apparition 400ms;
     }
     .infos_flat {
         font-weight: 300;
